@@ -1,0 +1,16 @@
+{
+    "name": "pablo.veintimilla/pre-commit",
+    "description": "Git pre-commit hook script for Drupal. Fork from manoj-apare/pre-commit",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Manoj K",
+            "email": "pabloveintimilla@gmail.com"
+        },
+        {
+            "name": "Pablo Veintimilla Vargas",
+            "email": "manojapare@gmail.com"
+        }
+    ],
+    "require": {}
+}
