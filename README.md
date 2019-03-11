@@ -11,9 +11,10 @@ repository.
 
 ## Installation
 
-For using this hook script just copy/download the script file to your git
-repository hooks folder that is in `.git/hooks/`. Don't forget to give
+1. For using this hook script just copy/download [this script file](https://github.com/sdemi/pre-commit/raw/master/pre-commit) to a directory called  `.githooks` in your root Drupal directory. Don't forget to give
 executable permission for the script file.
+2. Configure `core.hooksPath` variable to your your new managed hooks directory. In GitBash navigate to your root Drupal directory and execute the command `git config core.hooksPath .githooks`.
+3. Instruct all remaining team members to pull in the new script using git and update the `core.hooksPath` variable using method above.
 
 ## Working
 
