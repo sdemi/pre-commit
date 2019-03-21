@@ -55,7 +55,9 @@ Checks for coding standard issues using `phpcs` with arguments:
 2. extensions = 'php,module,inc,install,test,profile,theme,js,css,info,txt'
 
 ## Note
-For better performance of the script, we have excluded the checking of files
+* Only two of the following directories will be checked for above violations:
+  * /modules/custom/
+  * /themes/custom/
+* For better performance of the script, we have excluded the checking of files
 with following extensions: 'info, png, gif, jpg, ico, patch, htaccess, sh, ttf,
-woff, eot, svg'. Also excluded files residing in the following directories:
-'features, contrib, devel, libraries'.
+woff, eot, svg'.
