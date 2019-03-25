@@ -58,6 +58,3 @@ Checks for coding standard issues using `phpcs` with arguments:
 * Only two of the following directories will be checked for above violations:
   * /modules/custom/
   * /themes/custom/
-* For better performance of the script, we have excluded the checking of files
-with following extensions: 'info, png, gif, jpg, ico, patch, htaccess, sh, ttf,
-woff, eot, svg'.
