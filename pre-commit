@@ -77,7 +77,7 @@ then
       if [ $merge_conflict -eq 0 ]
       then
         echo "${red}"
-        echo "# Merge confict marker(s) found in:"
+        echo "# Merge conflict marker(s) found in:"
         echo "-----------------------------------${reset}"
       fi
       merge_conflict=1
