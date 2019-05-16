@@ -83,6 +83,17 @@ then
       merge_conflict=1
       echo $FILE
     fi
+    # Check for Drupal deprecated functions
+    # List files added to commit
+    drupal_check=`scripts/drupal-check.phar $FILE`
+    if [[ "${drupal_check}" =~ "[ERROR]" ]]
+    then
+      echo "${red}"
+      echo "# Drupal check deprecated functions issue(s):"
+      echo "---------------------------${reset}"
+      php scripts/drupal-check.phar $FILE
+      drupal_check_error=1
+    fi
   done
   # Check for Drupal coding standards
   # List php files added to commit
