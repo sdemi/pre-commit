@@ -8,6 +8,7 @@ repository.
 ## Prerequisite
 1. PHP Code Sniffer (phpcs).
 2. Coder module - `Drupal` code sniffer standard.
+3. [drupal-check](https://github.com/mglaman/drupal-check)
 
 ## Installation
 
@@ -53,6 +54,10 @@ using egrep pattern "(<<<<|====|>>>>)+.*(\n)?".
 Checks for coding standard issues using `phpcs` with arguments:
 1. standard = Drupal
 2. extensions = 'php,module,inc,install,test,profile,theme,js,css,info,txt'
+
+### drupal-check
+
+drupal-check was a tool developed for Drupal 9 readiness. It makes sure that no deprecated functions exist in your code so that when Drupal 9 is released, your code will be complaint with the upgrade.
 
 ## Note
 * Only two of the following directories will be checked for above violations:
